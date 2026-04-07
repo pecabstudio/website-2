@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html class="light" lang="fr">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <!-- ============================================================ -->
+  <!-- SEO PAGE ÉCO-ENSEIGNES                                       -->
+  <!-- ============================================================ -->
+  <title>Éco-Enseignes Bretagne — Studio Pécab</title>
+  <meta name="description" content="Fabricant breton d'enseignes éco-responsables. Matériaux biosourcés, locaux et recyclables. Signalétique durable sur mesure en Bretagne."/>
+  <meta name="robots" content="index, follow"/>
+  <link rel="canonical" href="https://pecab.netlify.app/eco-enseignes"/>
+  <meta property="og:title" content="Éco-Enseignes Bretagne — Studio Pécab"/>
+  <meta property="og:description" content="Enseignes éco-conçues en Bretagne : bois massif, aluminium recyclé, matériaux biosourcés."/>
+  <meta property="og:url" content="https://pecab.netlify.app/eco-enseignes"/>
+  <!-- ============================================================ -->
+
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;800;900&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+  <script id="tailwind-config">
+  tailwind.config = {
+    darkMode:"class",
+    theme:{extend:{colors:{
+      "outline":"#75777b","background":"#fcf9f6","surface-container-high":"#eae8e5",
+      "inverse-primary":"#bfc7d2","outline-variant":"#c5c6cb","on-background":"#1c1c1a",
+      "on-secondary":"#ffffff","inverse-surface":"#31302f","surface-variant":"#e5e2df",
+      "on-surface-variant":"#44474b","secondary-container":"#d0e5d2",
+      "surface-container-highest":"#e5e2df","on-primary-container":"#7c858f",
+      "surface-container":"#f0edea","secondary-fixed":"#d3e8d5","tertiary":"#000000",
+      "secondary":"#506354","on-primary":"#ffffff","surface-container-lowest":"#ffffff",
+      "on-surface":"#1c1c1a","on-primary-fixed":"#141c24","surface-container-low":"#f6f3f0",
+      "primary":"#000000","surface":"#fcf9f6","on-secondary-container":"#546758",
+      "primary-container":"#141c24","inverse-on-surface":"#f3f0ed"
+    },borderRadius:{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},
+    fontFamily:{"headline":["Inter"],"body":["Inter"],"label":["Inter"]}}}
+  }
+  </script>
+  <style>
+    body{font-family:'Inter',sans-serif;background-color:#fcf9f6;color:#1c1c1a;-webkit-font-smoothing:antialiased;}
+    .material-symbols-outlined{font-variation-settings:'FILL' 0,'wght' 400,'GRAD' 0,'opsz' 48;}
+  </style>
+</head>
+<body class="antialiased">
+
+<!-- ============================================================ -->
+<!-- NAVIGATION                                                    -->
+<!-- ============================================================ -->
+<nav class="fixed top-8 left-1/2 -translate-x-1/2 z-50 w-full max-w-fit px-4" aria-label="Navigation principale">
+  <div class="bg-black/90 backdrop-blur-md px-8 py-4 rounded-full flex items-center space-x-8 shadow-2xl border border-white/10">
+    <a href="index.html" aria-label="Accueil">
+      <img src="images/logo.png" alt="Logo Studio Pécab" class="h-8 w-auto"
+           onerror="this.outerHTML='<span class=\'text-sm font-bold tracking-tighter text-white uppercase\'>STUDIO</span>'"/>
+    </a>
+    <div class="hidden md:flex items-center space-x-8">
+      <!-- Page active : Éco-enseignes soulignée -->
+      <a class="text-white border-b border-white text-xs font-bold tracking-widest uppercase" href="#">Éco-enseignes</a>
+      <a class="text-stone-300 hover:text-white transition-colors text-xs font-bold tracking-widest uppercase" href="graphisme.html">Graphisme</a>
+      <a class="text-stone-300 hover:text-white transition-colors text-xs font-bold tracking-widest uppercase" href="index.html#contact-section">Contact</a>
+    </div>
+    <button class="md:hidden" aria-label="Ouvrir le menu"
+      onclick="var m=document.getElementById('mobile-menu'); m.classList.toggle('hidden'); m.classList.toggle('flex')">
+      <span class="material-symbols-outlined text-white cursor-pointer">menu</span>
+    </button>
+  </div>
+</nav>
+
+<!-- Menu mobile -->
+<div id="mobile-menu" class="fixed inset-0 z-[100] bg-stone-50 flex-col items-center justify-center hidden" role="dialog" aria-modal="true">
+  <button aria-label="Fermer" onclick="var m=document.getElementById('mobile-menu'); m.classList.add('hidden'); m.classList.remove('flex')" class="absolute top-8 right-8">
+    <span class="material-symbols-outlined text-3xl">close</span>
+  </button>
+  <div class="flex flex-col items-center gap-8">
+    <a href="index.html" onclick="var m=document.getElementById('mobile-menu'); m.classList.add('hidden'); m.classList.remove('flex')" class="bg-black text-white px-10 py-3 rounded-full text-[10px] font-bold tracking-[0.3em] uppercase hover:opacity-80 min-w-[200px] text-center">ACCUEIL</a>
+    <a href="eco-enseignes.html" onclick="var m=document.getElementById('mobile-menu'); m.classList.add('hidden'); m.classList.remove('flex')" class="bg-black text-white px-10 py-3 rounded-full text-[10px] font-bold tracking-[0.3em] uppercase hover:opacity-80 min-w-[200px] text-center">ÉCO-ENSEIGNES</a>
+    <a href="graphisme.html" onclick="var m=document.getElementById('mobile-menu'); m.classList.add('hidden'); m.classList.remove('flex')" class="bg-black text-white px-10 py-3 rounded-full text-[10px] font-bold tracking-[0.3em] uppercase hover:opacity-80 min-w-[200px] text-center">GRAPHISME</a>
+    <a href="index.html#contact-section" onclick="var m=document.getElementById('mobile-menu'); m.classList.add('hidden'); m.classList.remove('flex')" class="bg-black text-white px-10 py-3 rounded-full text-[10px] font-bold tracking-[0.3em] uppercase hover:opacity-80 min-w-[200px] text-center">CONTACT</a>
+  </div>
+</div>
+
+<main class="pt-48">
+
+  <!-- ============================================================ -->
+  <!-- EN-TÊTE DE PAGE                                              -->
+  <!-- ============================================================ -->
+  <header class="px-12 mb-24 max-w-screen-2xl mx-auto">
+    <div class="max-w-6xl">
+      <!-- MODIFIER : titre de la page éco-enseignes -->
+      <h1 class="text-4xl md:text-6xl font-bold tracking-tighter leading-[1.1] text-primary mb-8">
+        Fabricant breton d'enseignes éco-responsables
+      </h1>
+      <div class="mt-8 mb-10 w-24 h-px bg-primary"></div>
+      <!-- MODIFIER : description de la page éco-enseignes -->
+      <p class="text-xl md:text-2xl text-on-surface-variant font-medium leading-relaxed max-w-3xl">
+        Chez Pécab!, nous créons des enseignes et signalétique éco-conçues en Bretagne, pensées pour une recyclabilité optimale. Nous sélectionnons des matériaux locaux, recyclés et recyclables pour allier durabilité et authenticité.
+      </p>
+    </div>
+  </header>
+
+  <!-- ============================================================ -->
+  <!-- GRILLE PROJETS — 2 colonnes, format carré, sans marges       -->
+  <!-- Chaque carte pointe vers sa page projet individuelle         -->
+  <!-- ============================================================ -->
+  <section class="grid grid-cols-1 md:grid-cols-2 w-full border-t border-zinc-100" aria-label="Projets éco-enseignes">
+
+    <!-- ══════════════════════════════════════════════════════════ -->
+    <!-- PROJET ÉCO 1 — Atelier Bois Massif                        -->
+    <!-- MODIFIER : href, src image, alt, et nom du projet         -->
+    <!-- ══════════════════════════════════════════════════════════ -->
+    <a class="aspect-square relative group overflow-hidden cursor-pointer bg-surface-container-highest"
+       href="projets/eco/atelier-bois-massif.html"
+       aria-label="Voir le projet Atelier Bois Massif">
+      <img alt="Enseigne en bois massif — Atelier Bois Massif" loading="lazy"
+           class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+           src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5lFCQ70ehQfPqxyblbxA-65kxon_U4N11v8hm3PPKxRaV18Y4lbIlJxBqPhphXZBKRKZ89H6agp0PTZm9D3ChdWzC17Z91wlRpHtlRNE5VfSHgug4YR7sz28NjLNUFTmaV0FhDfeiPaj4PyASYkgI2y15jdxHs2JxB81yn-WrEVam6dduLTT_sl3ELdtCbwoSW_1yA1qGllnFk4vK_s9JErxwj4W5F679aF1-pC-xPG7fjysesuiEGmmCfLWHTod5KiOk3cGnnNbm"/>
+      <div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-8">
+        <span class="text-white text-sm tracking-widest uppercase font-bold">Atelier Bois Massif</span>
+      </div>
+    </a>
+
+    <!-- ══════════════════════════════════════════════════════════ -->
+    <!-- PROJET ÉCO 2 — Signalétique Aluminium Recyclé             -->
+    <!-- ══════════════════════════════════════════════════════════ -->
+    <a class="aspect-square relative group overflow-hidden cursor-pointer bg-surface-container-highest border-l border-zinc-100/10"
+       href="projets/eco/signaletique-aluminium.html"
+       aria-label="Voir le projet Signalétique Aluminium Recyclé">
+      <img alt="Signalétique en aluminium recyclé" loading="lazy"
+           class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+           src="https://lh3.googleusercontent.com/aida-public/AB6AXuAVfC_hQqz6ujOyeLGiKfTFHR2Lrh7FYC2cWuskvuwugR3I8Kxf_1SxreG9p-DsUZvc2KNePmlhnoOfuVpSDPasD6xP_1uA2YuEF8b1HzoVijM826Yo-zuit7iBQW28tJe5brBexq3sH8jcuxM41MuDXrdeYyxgPCMI5L8f1HrJRTHsE1q1q-sn5yg7ZBoZNsVX1KxWsQzxegazeY3loS709kZB_a8rCMPoF6MdifCpVGGAiEJBcu7eEUKLfCE1ao9p9Tefypv1OhFp"/>
+      <div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-8">
+        <span class="text-white text-sm tracking-widest uppercase font-bold">Signalétique Aluminium Recyclé</span>
+      </div>
+    </a>
+
+    <!-- ══════════════════════════════════════════════════════════ -->
+    <!-- PROJET ÉCO 3 — Éclairage Basse Consommation               -->
+    <!-- ══════════════════════════════════════════════════════════ -->
+    <a class="aspect-square relative group overflow-hidden cursor-pointer bg-surface-container-highest border-t border-zinc-100/10"
+       href="projets/eco/eclairage-basse-conso.html"
+       aria-label="Voir le projet Éclairage Basse Consommation">
+      <img alt="Enseigne lumineuse basse consommation" loading="lazy"
+           class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+           src="https://lh3.googleusercontent.com/aida-public/AB6AXuAd4bPniO8kFMDDxpAy0g4xZF7GsrqaWzNctrmOuV9m-RcMTxT15bkf9dFDVmJtje6Pe59-desXqZa5VA8u2gUsS1f1zW4P-37WkBtCRyxyy9SeVghfnvoCqG5D7CnQhHrjBeldCiG6jcnMNIqERF65AXdvKA--vGU63BnmLqfWdSJXEhmNCcaRJDTO7xws34afRzOhJcA_4-J-2bAhSlIoPIHU2f-Wh-RF-0C9c90OjGFJLhGt3fz1AE-2l3Vnv-rcYlppwqUEgVSt"/>
+      <div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-8">
+        <span class="text-white text-sm tracking-widest uppercase font-bold">Éclairage Basse Consommation</span>
+      </div>
+    </a>
+
+    <!-- ══════════════════════════════════════════════════════════ -->
+    <!-- PROJET ÉCO 4 — Directionnel Biosourcé                     -->
+    <!-- ══════════════════════════════════════════════════════════ -->
+    <a class="aspect-square relative group overflow-hidden cursor-pointer bg-surface-container-highest border-t border-l border-zinc-100/10"
+       href="projets/eco/directionnel-biosource.html"
+       aria-label="Voir le projet Directionnel Biosourcé">
+      <img alt="Panneau directionnel en matériaux biosourcés" loading="lazy"
+           class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+           src="https://lh3.googleusercontent.com/aida-public/AB6AXuBs41lu-5mWXctGglm_ylwBdkVB3GqvzOkIFeezGRzDdlVt8LuDxFYJX51cYwcMXFgP4BebDu0ZpWumviYyGIH3pF1XpzOTgjVd_BpUGwUgPjI_eEe2KOSHuMQipDCIyTHGE4iTf_7Hi9y7Rmo-H64xXOBjv4DrU4or8kuZTafYUrqrouCfd4yDgmmWA8DyZnEA08LYpaKdgBqH0Ft-EjHddZ6tSpHqdFBx_G6wT6DrWXTv1aSGwTsMFx5n97JnNRpvMyytG3ZWaE-a"/>
+      <div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-8">
+        <span class="text-white text-sm tracking-widest uppercase font-bold">Directionnel Biosourcé</span>
+      </div>
+    </a>
+
+    <!-- ══════════════════════════════════════════════════════════ -->
+    <!-- PROJET ÉCO 5 — Gravure Pierre Locale                      -->
+    <!-- ══════════════════════════════════════════════════════════ -->
+    <a class="aspect-square relative group overflow-hidden cursor-pointer bg-surface-container-highest border-t border-zinc-100/10"
+       href="projets/eco/gravure-pierre.html"
+       aria-label="Voir le projet Gravure Pierre Locale">
+      <img alt="Gravure sur pierre locale bretonne" loading="lazy"
+           class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+           src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVloiMY17OTXjKALfODlBEex1qOE9TnykCehvgzlD1rMS8Zg8_BYbeHKfqAP5o9u7aYmG_Hq-DXFYL6lM-euxv-r9OQNxtAssKcH1WUMlcfYbeJMUPa1FhaSWXOJpzqF4SrJRD9-jEpWPSBlV3nhc8gPD9IL7fedSo5qgp2z5KHmUNUDV1pIGkwoPLehsEvEoUrzD_P_Q9Slr3MYkmmjI7WKe2hmXUTsSjBAAMOk1RcwUxyW-om-pjra5JNxFv4-K1XOMohRNCOO-l"/>
+      <div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-8">
+        <span class="text-white text-sm tracking-widest uppercase font-bold">Gravure Pierre Locale</span>
+      </div>
+    </a>
+
+    <!-- ══════════════════════════════════════════════════════════ -->
+    <!-- PROJET ÉCO 6 — Installation Végétale                      -->
+    <!-- ══════════════════════════════════════════════════════════ -->
+    <a class="aspect-square relative group overflow-hidden cursor-pointer bg-surface-container-highest border-t border-l border-zinc-100/10"
+       href="projets/eco/installation-vegetale.html"
+       aria-label="Voir le projet Installation Végétale">
+      <img alt="Installation végétale signalétique" loading="lazy"
+           class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+           src="https://lh3.googleusercontent.com/aida-public/AB6AXuBv36xhMBFU0BfqFUVkEDzJYtbhXYwETow9VK4w7dJEWL8vHt5WAK-22arQcgf8hpVLgPab3j9sw5wMzBEMIkbIg2c_Lr_hnyfNVeBPgcozyVo_0b6Hj3raxn__aYf-NFkc1iMtvjYiZcFQJEPLarjxVMxeJOEAEGwHVu4wMBqTWTOePBpn7YsoWLRdPzo0OZxqpGKPcbFLmT3xwxwAAbKaMb32nnLmV-oOKHMwmMB-60hvtLlxx0USYXiArtKY4HFrpBTpHovng6bK"/>
+      <div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-8">
+        <span class="text-white text-sm tracking-widest uppercase font-bold">Installation Végétale</span>
+      </div>
+    </a>
+
+    <!-- ══════════════════════════════════════════════════════════ -->
+    <!-- PROJET ÉCO 7 — Vitrophanie Sans PVC                       -->
+    <!-- ══════════════════════════════════════════════════════════ -->
+    <a class="aspect-square relative group overflow-hidden cursor-pointer bg-surface-container-highest border-t border-zinc-100/10"
+       href="projets/eco/vitrophanie.html"
+       aria-label="Voir le projet Vitrophanie Sans PVC">
+      <img alt="Vitrophanie sans PVC écologique" loading="lazy"
+           class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+           src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvkKlOQ9SXiYfxMPzU-DCoQ4EKWc9sWfaFJVU0lVovLxApGnkk9EE3g7dZZBnqQdfYo8KzVDRdKLdeNYvb3vtXFocFzZ7CVqk5pbOFN4VWjsyRMpuKmWLMoKmJwT6TMjfBQKtrRL2fcmPabcqyAw0mEBoevKaP1LGW4DMAztkL1n2rbb7HDRdb9cvyjo5XX9uiJrLT5tipjlpxXnIC6FL_CiMfJAyBIDFWCoI3HncKJ9wccnywPQPDiOwdXgqIa2gfa60twsemiQz9"/>
+      <div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-8">
+        <span class="text-white text-sm tracking-widest uppercase font-bold">Vitrophanie Sans PVC</span>
+      </div>
+    </a>
+
+    <!-- ══════════════════════════════════════════════════════════ -->
+    <!-- PROJET ÉCO 8 — Intégration Architecturale                 -->
+    <!-- ══════════════════════════════════════════════════════════ -->
+    <a class="aspect-square relative group overflow-hidden cursor-pointer bg-surface-container-highest border-t border-l border-zinc-100/10"
+       href="projets/eco/integration-architecturale.html"
+       aria-label="Voir le projet Intégration Architecturale">
+      <img alt="Intégration architecturale enseigne bâtiment" loading="lazy"
+           class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+           src="https://lh3.googleusercontent.com/aida-public/AB6AXuBD9tnSSKCK8RCH8iO-W8g4lG8gA_u2AdWrnghTJtyq3JHKcaLdZxoH1gXTocC5tkwyVrwJme-LKOvVsMqq9gQSaQFWwA5Yi6gTAd3D6A0QZoH1lN4KBovWSqOAM_GtLli4HbzXgZnQSiD0yCjZWvfmgteZaziiI0x-A3yg_eOYqOlvs1sxkcJiJN4QBRX6EbvzwC_v0g7ZWBUSu6uD-ULsCpbt7jNlhuLMTvSZ-HuudZnKkYoyOgB87slwxyc05mhDzE9pmRjveuxJ"/>
+      <div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-8">
+        <span class="text-white text-sm tracking-widest uppercase font-bold">Intégration Architecturale</span>
+      </div>
+    </a>
+
+  </section>
+
+  <!-- CTA -->
+  <section class="py-48 px-12 text-center">
+    <h2 class="text-4xl md:text-6xl font-bold tracking-tighter mb-12">Un nouveau projet ?</h2>
+    <a class="inline-block bg-primary text-on-primary px-12 py-6 rounded-sm text-sm tracking-widest uppercase font-bold hover:opacity-80 transition-opacity" href="index.html#contact-section">
+      Parlons-en
+    </a>
+  </section>
+</main>
+
+<footer class="w-full py-24 bg-stone-100 border-t border-stone-200">
+  <div class="flex flex-col md:flex-row justify-between items-center px-12 max-w-screen-2xl mx-auto">
+    <div class="font-sans text-sm tracking-widest uppercase text-zinc-400 mb-8 md:mb-0">© 2025 Studio Pécab. Fait avec soin.</div>
+    <div class="flex gap-12 font-sans text-sm tracking-widest uppercase">
+      <a class="text-zinc-400 hover:text-primary transition-all" href="#">Instagram</a>
+      <a class="text-zinc-400 hover:text-primary transition-all" href="#">LinkedIn</a>
+      <a class="text-zinc-400 hover:text-primary transition-all" href="mailto:pecabstudio@gmail.com">Email</a>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

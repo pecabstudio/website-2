@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html class="light" lang="fr">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <!-- ============================================================ -->
+  <!-- SEO : MODIFIER CES LIGNES POUR LE RÉFÉRENCEMENT             -->
+  <!-- ============================================================ -->
+  <title>Studio Pécab — Éco-enseignes & Graphisme en Bretagne</title>
+  <meta name="description" content="Studio Pécab, créateur d'enseignes éco-responsables et d'identités visuelles en Bretagne. Matériaux biosourcés, circuits courts, design minimaliste et durable."/>
+  <meta name="keywords" content="éco-enseigne, enseigne bretagne, graphisme bretagne, studio créatif, identité visuelle, signalétique écologique, design durable"/>
+  <meta name="author" content="Studio Pécab"/>
+  <meta name="robots" content="index, follow"/>
+  <link rel="canonical" href="https://pecab.netlify.app/"/>
+
+  <!-- SEO : Open Graph (aperçu sur réseaux sociaux) -->
+  <meta property="og:title" content="Studio Pécab — Éco-enseignes & Graphisme en Bretagne"/>
+  <meta property="og:description" content="Enseignes éco-responsables et identités visuelles en Bretagne. Design minimaliste et matériaux durables."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://pecab.netlify.app/"/>
+  <meta property="og:image" content="https://pecab.netlify.app/images/og-image.jpg"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <!-- ============================================================ -->
+
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;800;900&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+
+  <script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: { extend: { colors: {
+      "inverse-on-surface":"#f3f0ed","outline":"#75777b","background":"#fcf9f6",
+      "surface-container-high":"#eae8e5","inverse-primary":"#bfc7d2","outline-variant":"#c5c6cb",
+      "on-background":"#1c1c1a","surface-tint":"#575f69","on-secondary":"#ffffff",
+      "inverse-surface":"#31302f","surface-variant":"#e5e2df","on-surface-variant":"#44474b",
+      "secondary-container":"#d0e5d2","primary-fixed":"#dbe3ef","primary-fixed-dim":"#bfc7d2",
+      "surface-container-highest":"#e5e2df","on-primary-container":"#7c858f",
+      "surface-container":"#f0edea","secondary-fixed":"#d3e8d5","tertiary":"#000000",
+      "secondary":"#506354","on-primary":"#ffffff","surface-container-lowest":"#ffffff",
+      "on-surface":"#1c1c1a","on-error":"#ffffff","on-secondary-fixed":"#0e1f13",
+      "on-secondary-fixed-variant":"#394b3d","on-tertiary":"#ffffff","on-primary-fixed":"#141c24",
+      "surface-container-low":"#f6f3f0","surface-bright":"#fcf9f6","surface-dim":"#dcdad7",
+      "error":"#ba1a1a","on-primary-fixed-variant":"#3f4851","error-container":"#ffdad6",
+      "primary":"#000000","surface":"#fcf9f6","secondary-fixed-dim":"#b7ccb9",
+      "on-secondary-container":"#546758","primary-container":"#141c24"
+    }, borderRadius:{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},
+    fontFamily:{"headline":["Inter"],"body":["Inter"],"label":["Inter"]} } }
+  }
+  </script>
+  <style>
+    body { font-family: 'Inter', sans-serif; background-color: #fcf9f6; -webkit-font-smoothing: antialiased; }
+    .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+  </style>
+</head>
+<body class="text-on-surface selection:bg-secondary-container">
+
+<!-- ============================================================ -->
+<!-- NAVIGATION PRINCIPALE                                         -->
+<!-- ============================================================ -->
+<nav class="fixed top-8 left-1/2 -translate-x-1/2 z-50 w-full max-w-fit px-4" aria-label="Navigation principale">
+  <div class="bg-black/90 backdrop-blur-md px-8 py-4 rounded-full flex items-center space-x-8 shadow-2xl border border-white/10">
+
+    <!-- ── LOGO : remplacez images/logo.png par votre fichier logo ── -->
+    <a href="index.html" aria-label="Accueil Studio Pécab">
+      <img src="images/logo.png" alt="Logo Studio Pécab" class="h-8 w-auto"
+           onerror="this.outerHTML='<span class=\'text-sm font-bold tracking-tighter text-white uppercase\'>STUDIO</span>'"/>
+    </a>
+    <!-- ──────────────────────────────────────────────────────────── -->
+
+    <div class="hidden md:flex items-center space-x-8">
+      <a class="text-stone-300 hover:text-white transition-colors text-xs font-bold tracking-widest uppercase" href="eco-enseignes.html">Éco-enseignes</a>
+      <a class="text-stone-300 hover:text-white transition-colors text-xs font-bold tracking-widest uppercase" href="graphisme.html">Graphisme</a>
+      <a class="text-stone-300 hover:text-white transition-colors text-xs font-bold tracking-widest uppercase" href="#contact-section">Contact</a>
+    </div>
+
+    <!-- Burger mobile -->
+    <button class="md:hidden" aria-label="Ouvrir le menu"
+      onclick="var m=document.getElementById('mobile-menu'); m.classList.toggle('hidden'); m.classList.toggle('flex')">
+      <span class="material-symbols-outlined text-white cursor-pointer">menu</span>
+    </button>
+  </div>
+</nav>
+
+<!-- ============================================================ -->
+<!-- MENU MOBILE OVERLAY                                           -->
+<!-- ============================================================ -->
+<div id="mobile-menu" class="fixed inset-0 z-[100] bg-stone-50 flex-col items-center justify-center hidden" role="dialog" aria-modal="true">
+  <button aria-label="Fermer le menu"
+    onclick="var m=document.getElementById('mobile-menu'); m.classList.add('hidden'); m.classList.remove('flex')"
+    class="absolute top-8 right-8">
+    <span class="material-symbols-outlined text-3xl">close</span>
+  </button>
+  <div class="flex flex-col items-center gap-8">
+    <a href="index.html"
+       onclick="var m=document.getElementById('mobile-menu'); m.classList.add('hidden'); m.classList.remove('flex')"
+       class="bg-black text-white px-10 py-3 rounded-full text-[10px] font-bold tracking-[0.3em] uppercase hover:opacity-80 transition-opacity min-w-[200px] text-center">ACCUEIL</a>
+    <a href="eco-enseignes.html"
+       onclick="var m=document.getElementById('mobile-menu'); m.classList.add('hidden'); m.classList.remove('flex')"
+       class="bg-black text-white px-10 py-3 rounded-full text-[10px] font-bold tracking-[0.3em] uppercase hover:opacity-80 transition-opacity min-w-[200px] text-center">ÉCO-ENSEIGNES</a>
+    <a href="graphisme.html"
+       onclick="var m=document.getElementById('mobile-menu'); m.classList.add('hidden'); m.classList.remove('flex')"
+       class="bg-black text-white px-10 py-3 rounded-full text-[10px] font-bold tracking-[0.3em] uppercase hover:opacity-80 transition-opacity min-w-[200px] text-center">GRAPHISME</a>
+    <a href="#contact-section"
+       onclick="var m=document.getElementById('mobile-menu'); m.classList.add('hidden'); m.classList.remove('flex')"
+       class="bg-black text-white px-10 py-3 rounded-full text-[10px] font-bold tracking-[0.3em] uppercase hover:opacity-80 transition-opacity min-w-[200px] text-center">CONTACT</a>
+  </div>
+</div>
+
+<!-- ============================================================ -->
+<!-- HERO SPLIT — DEUX GRANDES IMAGES D'ENTRÉE                    -->
+<!-- ============================================================ -->
+<header class="relative w-full overflow-hidden">
+  <div class="flex flex-col md:flex-row h-auto md:h-[35vw]">
+
+    <!-- ── IMAGE GAUCHE : Éco-enseignes ── -->
+    <!-- MODIFIER : remplacez le src par votre image (ex: images/hero-eco.jpg) -->
+    <a class="relative w-full md:w-1/2 h-[40vh] md:h-full group cursor-pointer overflow-hidden" href="eco-enseignes.html">
+      <img
+        alt="Éco-enseignes bretonnes artisanales"
+        class="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
+        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHvdCJxt5o7A-KvE85dRT2m9s1xjZcpwXDX8WipPbDiNZhS8odonh-q-vHDtXvwktExHeWnZxTLcmMdOKdxf62ZQ9Pxm9EmmOhMoPahMugpaA9Sw44RY0U1oUZ37_tNY_KMVz4BU-5iPQKwMzdcnW9RRmocEoMbYm_uK4M5wEFDU4nS9p6L0E_MbuYibb2fFW9aW9h4HdtCotjvE6Lv-fYIL_mrnDubsTVCqUB0q9wNSP_HLIWeDqzpxVm4hKkkIol7lZEGPkFkSi2"/>
+      <div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors"></div>
+      <div class="absolute inset-0 flex items-center justify-center">
+        <!-- MODIFIER : texte sur l'image gauche -->
+        <h2 class="text-white text-3xl md:text-4xl font-extrabold tracking-tighter uppercase drop-shadow-lg">Éco-enseignes</h2>
+      </div>
+    </a>
+    <!-- ───────────────────────────────── -->
+
+    <!-- ── IMAGE DROITE : Graphisme ── -->
+    <!-- MODIFIER : remplacez le src par votre image (ex: images/hero-graphisme.jpg) -->
+    <a class="relative w-full md:w-1/2 h-[40vh] md:h-full group cursor-pointer overflow-hidden border-t md:border-t-0 md:border-l border-white/10" href="graphisme.html">
+      <img
+        alt="Graphisme et identités visuelles Bretagne"
+        class="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
+        src="https://lh3.googleusercontent.com/aida-public/AB6AXuBSwi9HuH860IqSeDS7SnykjL_yDXw4s9BY8p834n1gs6iilheYUsJ47NkrLYUwDrHl7NNeZp4n-fwyeWKXFZIJ081njr-mLKiJ56W5IQf8XhlO3qWmGwnr3TPalO2eK51NSkN4huAV6qVfDHXD4YOtAjlrVt8CYsuwy3EIchumEJ6r83GJA6Bb8pRb1Aqwee40ZP-j6IKBMP2YYolw1HKKd4F6mOlyEkSDZ8gSVS60yJg7liE-bO4SLOpQ523aTdF8e2aDhCzPvZzM"/>
+      <div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors"></div>
+      <div class="absolute inset-0 flex items-center justify-center">
+        <!-- MODIFIER : texte sur l'image droite -->
+        <h2 class="text-white text-3xl md:text-4xl font-extrabold tracking-tighter uppercase drop-shadow-lg">Graphisme</h2>
+      </div>
+    </a>
+    <!-- ───────────────────────────────── -->
+
+  </div>
+</header>
+
+<!-- ============================================================ -->
+<!-- TITRE PRINCIPAL                                               -->
+<!-- ============================================================ -->
+<section class="py-16 md:py-24 px-12 max-w-screen-2xl mx-auto">
+  <div class="max-w-6xl">
+
+    <!-- MODIFIER : grande phrase d'accroche -->
+    <h1 class="text-4xl md:text-7xl font-extrabold tracking-tighter leading-[0.95] text-primary">
+      Un studio Breton qui crée des enseignes écologiques et des <br class="hidden md:block"/>
+      <!-- MODIFIER : texte en couleur sage (vert gris) -->
+      <span class="text-secondary opacity-80">identités visuelles pour afficher vos valeurs</span>
+    </h1>
+
+    <div class="mt-8 w-24 h-px bg-primary"></div>
+
+    <!-- MODIFIER : texte descriptif sous le titre -->
+    <p class="mt-10 text-lg md:text-xl text-on-surface-variant max-w-2xl leading-relaxed">
+      Basé entre terre et mer, nous allions l'esthétique minimale à une conscience environnementale profonde pour une communication visuelle durable.
+    </p>
+
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- SECTION À PROPOS                                              -->
+<!-- ============================================================ -->
+<section class="bg-surface-container-low py-32 px-12">
+  <div class="max-w-screen-2xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+
+    <!-- MODIFIER : votre photo (portrait ou atelier) -->
+    <div class="md:col-span-5 aspect-[3/4] overflow-hidden grayscale hover:grayscale-0 transition-all duration-1000 rounded-lg">
+      <img
+        alt="Le designer de Studio Pécab dans son atelier breton"
+        class="w-full h-full object-cover"
+        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDXW8_cqi-Mr2yOMZ0o7CYwuVBXYrI5S9XTQPApSeW0bYofBel3vhXDSJydQv_z3vdIng9Ovcn-3sF4dWVwwXic9sC_-v5QbsnWCxQenBzvRrW7tuwRUun-dfv9JAKc0skUOl698xaC5qEwJfz5Mh8h59oq39mtV7-RQdYTpyN-3su7ZrVFXGAKoS19UGvMCxktjq4-cMHWTwBJwYLdJTH0KgPr-X8Q1mTIpPSs4ZKJm1y6zKxr9REXbFHaz9kM5fUG1MsOw-OQJgmw"/>
+    </div>
+
+    <div class="md:col-span-6 md:col-start-7">
+      <!-- MODIFIER : label de section -->
+      <span class="text-xs font-bold tracking-[0.3em] uppercase text-secondary block mb-12">Philosophie</span>
+
+      <!-- MODIFIER : citation principale -->
+      <h2 class="text-5xl font-bold tracking-tighter leading-tight mb-12">
+        L'essentiel est invisible, <br/> mais il se ressent.
+      </h2>
+
+      <div class="space-y-8 text-lg text-on-surface-variant leading-relaxed font-light">
+        <!-- MODIFIER : paragraphe 1 -->
+        <p>
+          Diplômé en design durable, j'ai fondé ce studio avec l'intime conviction que la communication visuelle ne doit pas se faire au détriment de notre environnement.
+        </p>
+        <!-- MODIFIER : paragraphe 2 -->
+        <p>
+          Notre approche privilégie les matériaux biosourcés, les circuits courts et une esthétique intemporelle qui traverse les modes. Chaque projet est une collaboration vers une sobriété élégante et efficace.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- SECTION PARTENAIRES / CLIENTS                                 -->
+<!-- ============================================================ -->
+<section class="py-16 bg-white border-y border-stone-200">
+  <div class="max-w-screen-2xl mx-auto px-12">
+    <!-- MODIFIER : titre de la section clients -->
+    <h3 class="text-center text-xs font-bold tracking-[0.3em] uppercase text-stone-400 mb-12">Ils nous ont confié leur image</h3>
+    <div class="flex flex-wrap justify-center items-center gap-12 md:gap-24 opacity-40 grayscale hover:opacity-100 transition-opacity">
+      <!-- MODIFIER : remplacez ces noms par vos vrais clients (ou supprimez cette section) -->
+      <div class="text-2xl font-black tracking-tighter text-black">AETHER</div>
+      <div class="text-2xl font-black tracking-tighter text-black">MONOLITH</div>
+      <div class="text-2xl font-black tracking-tighter text-black">BRUT</div>
+      <div class="text-2xl font-black tracking-tighter text-black">OZONE</div>
+      <div class="text-2xl font-black tracking-tighter text-black">TERRA</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- BANNIÈRE PAYSAGE                                              -->
+<!-- ============================================================ -->
+<section class="w-full h-[50vh] md:h-[60vh] overflow-hidden">
+  <!-- MODIFIER : grande photo panoramique (paysage breton, atelier...) -->
+  <img
+    alt="Paysage breton — Studio Pécab"
+    class="w-full h-full object-cover"
+    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDAqdMPvWMwkdVwhVBviesfFbY_VXOgI0Rj3hkBIh7xwiXlP95iuRc1CDyynq63r-aLIV_MR7S8jpg-he2jaszpQct1A7SJ2FJ2BoVGhTUCJ4bDtQvEFLE2-f_HvSy4K6ngenLx5Nsdt4hL5DTp8BdatPliCsZVlVKDNm3dVKTLqxoRrl9eZ0Tjc0Kp-oWnwgb2tQCj-_vm13zvAC69llgewp1GQn1Po0E-xj9HtJ92Txak7-nwvlNqqWlVibv9vxl-6WTqqLlkGqeF"/>
+</section>
+
+<!-- ============================================================ -->
+<!-- FORMULAIRE DE CONTACT                                         -->
+<!-- ============================================================ -->
+<section class="py-32 md:py-48 px-12 max-w-screen-2xl mx-auto" id="contact-section">
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-24">
+
+    <div>
+      <!-- MODIFIER : titre de la section contact -->
+      <h2 class="text-6xl font-bold tracking-tighter mb-8">Parlons de votre projet.</h2>
+      <!-- MODIFIER : texte sous le titre contact -->
+      <p class="text-xl text-on-surface-variant max-w-md">
+        Nous sommes toujours à la recherche de nouvelles collaborations significatives.
+      </p>
+      <div class="mt-24 space-y-4">
+        <p class="text-sm tracking-widest uppercase text-secondary">Contact direct</p>
+        <!-- MODIFIER : votre email affiché -->
+        <p class="text-2xl font-medium">pecabstudio@gmail.com</p>
+        <!-- MODIFIER : votre téléphone (supprimez la ligne si vous ne voulez pas l'afficher) -->
+        <!-- <p class="text-2xl font-medium">+33 (0) 6 XX XX XX XX</p> -->
+      </div>
+    </div>
+
+    <!-- Formulaire Netlify — NE PAS MODIFIER les attributs data-netlify -->
+    <form
+      name="contact"
+      method="POST"
+      action="/merci"
+      data-netlify="true"
+      netlify-honeypot="bot-field"
+      class="space-y-12">
+
+      <input type="hidden" name="form-name" value="contact"/>
+      <p class="hidden"><label>Ne pas remplir : <input name="bot-field"/></label></p>
+
+      <div class="group border-b border-outline/20 focus-within:border-primary transition-colors pb-4">
+        <label class="block text-xs font-bold tracking-widest uppercase text-on-surface-variant mb-4">Nom complet</label>
+        <input name="nom" class="w-full bg-transparent border-none p-0 focus:ring-0 text-xl placeholder:text-stone-300" placeholder="Jean Dupont" type="text" required/>
+      </div>
+
+      <div class="group border-b border-outline/20 focus-within:border-primary transition-colors pb-4">
+        <label class="block text-xs font-bold tracking-widest uppercase text-on-surface-variant mb-4">Email</label>
+        <input name="email" class="w-full bg-transparent border-none p-0 focus:ring-0 text-xl placeholder:text-stone-300" placeholder="jean@exemple.fr" type="email" required/>
+      </div>
+
+      <div class="group border-b border-outline/20 focus-within:border-primary transition-colors pb-4">
+        <label class="block text-xs font-bold tracking-widest uppercase text-on-surface-variant mb-4">Message</label>
+        <textarea name="message" class="w-full bg-transparent border-none p-0 focus:ring-0 text-xl placeholder:text-stone-300 resize-none" placeholder="Parlez-nous de votre vision..." rows="4" required></textarea>
+      </div>
+
+      <button class="group inline-flex items-center justify-between w-full md:w-auto px-12 py-6 bg-primary text-on-primary text-sm font-bold tracking-widest uppercase hover:bg-zinc-800 transition-all" type="submit">
+        Envoyer la demande
+        <span class="material-symbols-outlined ml-4 text-sm">arrow_forward</span>
+      </button>
+
+    </form>
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- FOOTER                                                        -->
+<!-- ============================================================ -->
+<footer class="w-full py-24 bg-stone-100 border-t border-stone-200">
+  <div class="flex flex-col md:flex-row justify-between items-center px-12 max-w-screen-2xl mx-auto">
+    <!-- MODIFIER : texte copyright -->
+    <div class="font-sans text-sm tracking-widest uppercase text-zinc-400 mb-8 md:mb-0">
+      © 2025 Studio Pécab. Fait avec soin.
+    </div>
+    <div class="flex space-x-12">
+      <!-- MODIFIER : remplacez # par vos vrais liens réseaux sociaux -->
+      <a class="font-sans text-sm tracking-widest uppercase text-zinc-400 hover:text-primary transition-all" href="#" aria-label="Instagram Studio Pécab">Instagram</a>
+      <a class="font-sans text-sm tracking-widest uppercase text-zinc-400 hover:text-primary transition-all" href="#" aria-label="LinkedIn Studio Pécab">LinkedIn</a>
+      <a class="font-sans text-sm tracking-widest uppercase text-zinc-400 hover:text-primary transition-all" href="mailto:pecabstudio@gmail.com" aria-label="Envoyer un email">Email</a>
+    </div>
+  </div>
+</footer>
+
+<!-- SEO : données structurées pour Google -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Studio Pécab",
+  "description": "Studio créatif breton spécialisé en éco-enseignes et graphisme durable",
+  "url": "https://pecab.netlify.app",
+  "email": "pecabstudio@gmail.com",
+  "address": {
+    "@type": "PostalAddress",
+    "addressRegion": "Bretagne",
+    "addressCountry": "FR"
+  },
+  "serviceArea": "Bretagne, France"
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html class="light" lang="fr">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <!-- ============================================================ -->
+  <!-- SEO PAGE GRAPHISME                                           -->
+  <!-- ============================================================ -->
+  <title>Graphisme & Identités Visuelles — Studio Pécab Bretagne</title>
+  <meta name="description" content="Identités visuelles, graphisme éditorial et branding durable en Bretagne. Studio Pécab crée des systèmes visuels minimalistes et intemporels."/>
+  <meta name="robots" content="index, follow"/>
+  <link rel="canonical" href="https://pecab.netlify.app/graphisme"/>
+  <meta property="og:title" content="Graphisme & Identités Visuelles — Studio Pécab"/>
+  <meta property="og:description" content="Graphisme, branding et identités visuelles durables en Bretagne."/>
+  <meta property="og:url" content="https://pecab.netlify.app/graphisme"/>
+  <!-- ============================================================ -->
+
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;800;900&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+  <script id="tailwind-config">
+  tailwind.config = {
+    darkMode:"class",
+    theme:{extend:{colors:{
+      "outline":"#75777b","background":"#fcf9f6","surface-container-high":"#eae8e5",
+      "inverse-primary":"#bfc7d2","outline-variant":"#c5c6cb","on-background":"#1c1c1a",
+      "on-secondary":"#ffffff","surface-variant":"#e5e2df","on-surface-variant":"#44474b",
+      "secondary-container":"#d0e5d2","surface-container-highest":"#e5e2df",
+      "surface-container":"#f0edea","tertiary":"#000000","secondary":"#506354",
+      "on-primary":"#ffffff","surface-container-lowest":"#ffffff","on-surface":"#1c1c1a",
+      "on-primary-fixed":"#141c24","surface-container-low":"#f6f3f0",
+      "primary":"#000000","surface":"#fcf9f6","primary-container":"#141c24",
+      "inverse-on-surface":"#f3f0ed"
+    },borderRadius:{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},
+    fontFamily:{"headline":["Inter"],"body":["Inter"],"label":["Inter"]}}}
+  }
+  </script>
+  <style>
+    body{font-family:'Inter',sans-serif;background-color:#fcf9f6;color:#1c1c1a;-webkit-font-smoothing:antialiased;}
+    .material-symbols-outlined{font-variation-settings:'FILL' 0,'wght' 400,'GRAD' 0,'opsz' 48;}
+  </style>
+</head>
+<body class="antialiased">
+
+<!-- Navigation -->
+<nav class="fixed top-8 left-1/2 -translate-x-1/2 z-50 w-full max-w-fit px-4" aria-label="Navigation principale">
+  <div class="bg-black/90 backdrop-blur-md px-8 py-4 rounded-full flex items-center space-x-8 shadow-2xl border border-white/10">
+    <a href="index.html" aria-label="Accueil">
+      <img src="images/logo.png" alt="Logo Studio Pécab" class="h-8 w-auto"
+           onerror="this.outerHTML='<span class=\'text-sm font-bold tracking-tighter text-white uppercase\'>STUDIO</span>'"/>
+    </a>
+    <div class="hidden md:flex items-center space-x-8">
+      <a class="text-stone-300 hover:text-white transition-colors text-xs font-bold tracking-widest uppercase" href="eco-enseignes.html">Éco-enseignes</a>
+      <a class="text-white border-b border-white text-xs font-bold tracking-widest uppercase" href="#">Graphisme</a>
+      <a class="text-stone-300 hover:text-white transition-colors text-xs font-bold tracking-widest uppercase" href="index.html#contact-section">Contact</a>
+    </div>
+    <button class="md:hidden" aria-label="Ouvrir le menu"
+      onclick="var m=document.getElementById('mobile-menu'); m.classList.toggle('hidden'); m.classList.toggle('flex')">
+      <span class="material-symbols-outlined text-white cursor-pointer">menu</span>
+    </button>
+  </div>
+</nav>
+
+<div id="mobile-menu" class="fixed inset-0 z-[100] bg-stone-50 flex-col items-center justify-center hidden" role="dialog" aria-modal="true">
+  <button aria-label="Fermer" onclick="var m=document.getElementById('mobile-menu'); m.classList.add('hidden'); m.classList.remove('flex')" class="absolute top-8 right-8">
+    <span class="material-symbols-outlined text-3xl">close</span>
+  </button>
+  <div class="flex flex-col items-center gap-8">
+    <a href="index.html" onclick="var m=document.getElementById('mobile-menu'); m.classList.add('hidden'); m.classList.remove('flex')" class="bg-black text-white px-10 py-3 rounded-full text-[10px] font-bold tracking-[0.3em] uppercase hover:opacity-80 min-w-[200px] text-center">ACCUEIL</a>
+    <a href="eco-enseignes.html" onclick="var m=document.getElementById('mobile-menu'); m.classList.add('hidden'); m.classList.remove('flex')" class="bg-black text-white px-10 py-3 rounded-full text-[10px] font-bold tracking-[0.3em] uppercase hover:opacity-80 min-w-[200px] text-center">ÉCO-ENSEIGNES</a>
+    <a href="graphisme.html" onclick="var m=document.getElementById('mobile-menu'); m.classList.add('hidden'); m.classList.remove('flex')" class="bg-black text-white px-10 py-3 rounded-full text-[10px] font-bold tracking-[0.3em] uppercase hover:opacity-80 min-w-[200px] text-center">GRAPHISME</a>
+    <a href="index.html#contact-section" onclick="var m=document.getElementById('mobile-menu'); m.classList.add('hidden'); m.classList.remove('flex')" class="bg-black text-white px-10 py-3 rounded-full text-[10px] font-bold tracking-[0.3em] uppercase hover:opacity-80 min-w-[200px] text-center">CONTACT</a>
+  </div>
+</div>
+
+<main class="pt-48">
+
+  <!-- ============================================================ -->
+  <!-- EN-TÊTE                                                      -->
+  <!-- ============================================================ -->
+  <header class="px-12 mb-24 max-w-screen-2xl mx-auto">
+    <div class="max-w-6xl">
+      <!-- MODIFIER : titre de la page graphisme -->
+      <h1 class="text-4xl md:text-7xl font-extrabold tracking-tighter leading-[0.95] text-primary mb-8">
+        Identités Visuelles &amp; Graphisme
+      </h1>
+      <div class="mt-8 mb-10 w-24 h-px bg-primary"></div>
+      <!-- MODIFIER : description de la page graphisme -->
+      <p class="text-xl md:text-2xl text-on-surface-variant font-medium leading-relaxed max-w-3xl">
+        Nous façonnons des systèmes visuels durables et minimalistes.
+        Une approche graphique consciente qui privilégie le sens à l'ornementation.
+      </p>
+    </div>
+  </header>
+
+  <!-- ============================================================ -->
+  <!-- GRILLE PROJETS — 3 colonnes × 4 lignes = 12 projets         -->
+  <!-- Format carré, sans marges, photos plus grandes               -->
+  <!-- ============================================================ -->
+  <section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 w-full" aria-label="Projets graphisme">
+
+    <!-- ══════════════════════════════════════════════════════════ -->
+    <!-- PROJET GRAPHISME 1 — Noir & Blanc Vol. 1                  -->
+    <!-- MODIFIER : href, src image, alt, nom affiché au survol    -->
+    <!-- ══════════════════════════════════════════════════════════ -->
+    <a class="aspect-square relative overflow-hidden group cursor-pointer bg-surface-container-highest"
+       href="projets/graphisme/noir-blanc.html"
+       aria-label="Voir le projet Noir et Blanc Vol. 1">
+      <img alt="Affiche graphique minimaliste noir et blanc" loading="lazy"
+           class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+           src="https://lh3.googleusercontent.com/aida-public/AB6AXuDgOEWOMVt5QgUzSb_jqHkaZlJc-Tc9Hv46V_L81ZxEzYeg17CYO-8Vc0JzStFOtxNj84RqgBBu-FmFfjgKkwvJ-9ErK1qxGV0yXiLjaFd73AUSce7HqUC6StDU-hVVFO9g2gCR_qxCOIXRYB2IivVYS7SwzuyPYaDD_O3z9LGMWZ1eZpjmeT-fW-f5iNm9tEWxz_PflS-hORJOEB-PnrcHwSeE74niKQ89PscxY9HVjfRznjGHFsABIqpS5cyn9fsT-Rdm5DQ3mugr"/>
+      <div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-8">
+        <span class="text-white text-sm tracking-widest uppercase font-bold">Noir &amp; Blanc Vol. 1</span>
+      </div>
+    </a>
+
+    <!-- ══════════════════════════════════════════════════════════ -->
+    <!-- PROJET GRAPHISME 2 — Sève Organics                        -->
+    <!-- ══════════════════════════════════════════════════════════ -->
+    <a class="aspect-square relative overflow-hidden group cursor-pointer bg-surface-container-highest"
+       href="projets/graphisme/seve-organics.html"
+       aria-label="Voir le projet Sève Organics">
+      <img alt="Identité visuelle Sève Organics — branding bio" loading="lazy"
+           class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+           src="https://lh3.googleusercontent.com/aida-public/AB6AXuA37FFWQdb1XrL96_Xhco4WL-wTlM6ALwXbWbcS-yk8TOx5UNkbQnIchBESQ2dyd6TaxD7n_nmJ03L2HLcESZ0mfXxO0kX51f_mf9nGznr-bcdg2f5v88lArSgCKe1hNinBulOLHP_CO1gKu590OfWQqBbqCmEDW-0mvhP8rtrowz2UIwDA0uZsg6LU1S-dwH11HOnrPvkBbFQ3zUbwElhuT0ke-Eo4BfCiHeOGGWPuD--ZSc7ZpuqTbeRdpUwPIZOoICnlY1EJe6jc"/>
+      <div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-8">
+        <span class="text-white text-sm tracking-widest uppercase font-bold">Sève Organics</span>
+      </div>
+    </a>
+
+    <!-- ══════════════════════════════════════════════════════════ -->
+    <!-- PROJET GRAPHISME 3 — Revue Mensuelle                      -->
+    <!-- ══════════════════════════════════════════════════════════ -->
+    <a class="aspect-square relative overflow-hidden group cursor-pointer bg-surface-container-highest"
+       href="projets/graphisme/revue-mensuelle.html"
+       aria-label="Voir le projet Revue Mensuelle">
+      <img alt="Design éditorial revue mensuelle" loading="lazy"
+           class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+           src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDnNQnIePlkZdGNNOxGNK5YXQo2V6v8Fs9-zp_f0miBcdnZgAfVnwdyQ0GFrjWgwiFjVSeRZSYTuP2swSYMM1nmeBeS7LBEhvZ0T3fDyliZqgTRZ4joh0HXFRYZUKUHL0rGwZsJ_5v2EoG3Ofw9tibExWLiXSAvsQxJmL4wAy5EEnQJrk_-vIcLVPqgM1VQbcJHLyhFEL1sclYAwtJLwmGyeIrq31ayU95i6apbm6W-YIvBAm49kovS76mT9TPug_X-27uwejrLvkU"/>
+      <div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-8">
+        <span class="text-white text-sm tracking-widest uppercase font-bold">Revue Mensuelle</span>
+      </div>
+    </a>
+
+    <!-- ══════════════════════════════════════════════════════════ -->
+    <!-- PROJET GRAPHISME 4 — Domus Digital                        -->
+    <!-- ══════════════════════════════════════════════════════════ -->
+    <a class="aspect-square relative overflow-hidden group cursor-pointer bg-surface-container-highest"
+       href="projets/graphisme/domus-digital.html"
+       aria-label="Voir le projet Domus Digital">
+      <img alt="UI UX design minimal Domus Digital" loading="lazy"
+           class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+           src="https://lh3.googleusercontent.com/aida-public/AB6AXuBtltlvikraZ-dLOjN7ZCmzYzVyCXYgKKnnLftI4-VaFarHevBWE5x_IjxKBrL41mw3znMPG9zs-RZSQWxyciyj9ObnlP2fWQC8hb33lgF0nx-7wRgi78KUzbFhwrU8lQrVq8ULOt3iNt5ZS78IK4FEoZJfnQBu8vsYFN_6Hi_dNXwxWCk9WzdKh93Fx-nLQplevvJSK2h7dvDIDPseYUZzvF1_Qq09uFnl1GybEjfJviNGfHQ8rtr788pp4aXsR5wRp1SZzf9oPpku"/>
+      <div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-8">
+        <span class="text-white text-sm tracking-widest uppercase font-bold">Domus Digital</span>
+      </div>
+    </a>
+
+    <!-- ══════════════════════════════════════════════════════════ -->
+    <!-- PROJET GRAPHISME 5 — Bauhaus Study                        -->
+    <!-- ══════════════════════════════════════════════════════════ -->
+    <a class="aspect-square relative overflow-hidden group cursor-pointer bg-surface-container-highest"
+       href="projets/graphisme/bauhaus-study.html"
+       aria-label="Voir le projet Bauhaus Study">
+      <img alt="Art graphique abstrait Bauhaus Study" loading="lazy"
+           class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+           src="https://lh3.googleusercontent.com/aida-public/AB6AXuCFSTXvtQXMyIMBips8fndx7rQyj0yZtSBBv6Llbrwd5qE5oYIedywAp1O3GpyLNYDtVG1oq70kz5zViQMZPgyXvryAW76EBsMb0dABNzDP18r3P77rtvyFEIIOIkGF0M-N3CtMwW3EW1vmxKh4TsX_uRo3VXek5IBIj1GcgnbSCGmuI8UjqwwjhdbyJcduDYrLgEPPbPSIPDL8QJITBjkcoA0gr-gPcyXnYVxvsdw8OJQCXbteL1VYGXwFZ4aPSEOFURZFNE_swexD"/>
+      <div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-8">
+        <span class="text-white text-sm tracking-widest uppercase font-bold">Bauhaus Study</span>
+      </div>
+    </a>
+
+    <!-- ══════════════════════════════════════════════════════════ -->
+    <!-- PROJET GRAPHISME 6 — Apex Architecture                    -->
+    <!-- ══════════════════════════════════════════════════════════ -->
+    <a class="aspect-square relative overflow-hidden group cursor-pointer bg-surface-container-highest"
+       href="projets/graphisme/apex-architecture.html"
+       aria-label="Voir le projet Apex Architecture">
+      <img alt="Identité corporate Apex Architecture" loading="lazy"
+           class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+           src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrp66NGToXQ5a5AUkWOqgE3vdM4x4JBcyA6O3Mo8ABWv-NsdkYfXEcRPwwuWV0c7hB8jq8dcA9zUe7AAMiwq0juGfX4AxLPbBfH6oETuJKU-dey_1J-fRWwvwlx7KyD9i7gNo8zlhyhyCOGXEv35dKVa777eQ3WNxRqd0wojm1LmzMRmtuPqMJwcTzrbokO_S6Aml4BuxIMlFcK5fwsdiTllM3-cIcGPETXGYcCOz_jKw_NAgQ3kxUQdXf20gVP7GIE1gHdRRDcZts"/>
+      <div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-8">
+        <span class="text-white text-sm tracking-widest uppercase font-bold">Apex Architecture</span>
+      </div>
+    </a>
+
+    <!-- ══════════════════════════════════════════════════════════ -->
+    <!-- PROJET GRAPHISME 7 — Écho Sonore                          -->
+    <!-- ══════════════════════════════════════════════════════════ -->
+    <a class="aspect-square relative overflow-hidden group cursor-pointer bg-surface-container-highest"
+       href="projets/graphisme/echo-sonore.html"
+       aria-label="Voir le projet Écho Sonore">
+      <img alt="Design couverture album Écho Sonore" loading="lazy"
+           class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+           src="https://lh3.googleusercontent.com/aida-public/AB6AXuAdrVbnZEqTo2TjsW0vpIZkaZhXZFoxtabMlV1QTVYOgLyFXyMXw44JVvuZaXM_cMGORK_E5LBS-2LDovu3sg8a4NCmBKxDUpiXhjGNOH12t_YLtibbcCISlfbJrS1nlEtijGxBANgoCFBwQ4GjoJPrQodGD50CW-GqssK7qNIxIxTg8ecHoRtht0Q6PNV9_yz0rm1AxOssnAJL8Nkv8xUS-buXnOOs60bnDCg-DzGh3tAfw6acxy4hc0CtYu1tNQ_X4zqFBugGAOZ7"/>
+      <div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-8">
+        <span class="text-white text-sm tracking-widest uppercase font-bold">Écho Sonore</span>
+      </div>
+    </a>
+
+    <!-- ══════════════════════════════════════════════════════════ -->
+    <!-- PROJET GRAPHISME 8 — Galerie 12                           -->
+    <!-- ══════════════════════════════════════════════════════════ -->
+    <a class="aspect-square relative overflow-hidden group cursor-pointer bg-surface-container-highest"
+       href="projets/graphisme/galerie-12.html"
+       aria-label="Voir le projet Galerie 12">
+      <img alt="Catalogue exposition art Galerie 12" loading="lazy"
+           class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+           src="https://lh3.googleusercontent.com/aida-public/AB6AXuCyl0jizOdh_YXliUPi8AeZ_6h0pFtIg2y1jmalaghGnOWM6MdNhmFY-5tkhfXJbBsHouSIpo5QXRql03ueeY8UHB6WTWOoMxXVSUcNelUMed-TQXaV4HWcOCYIHk5CyAjax4rfIHUB1uWoVbqzGfQT2nqvF8dwpaHoqH0z51WM__Hn3lgrG8nGHRkWVj5k4OgUWG8fF3bwUBHrStD_tLnkL6HiopLBFOkIWf8dtNckiFyxIsazqgt1aZcR7TkKAv261o8dBdZ-X8xB"/>
+      <div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-8">
+        <span class="text-white text-sm tracking-widest uppercase font-bold">Galerie 12</span>
+      </div>
+    </a>
+
+    <!-- ══════════════════════════════════════════════════════════ -->
+    <!-- PROJET GRAPHISME 9 — Type Specimen                        -->
+    <!-- ══════════════════════════════════════════════════════════ -->
+    <a class="aspect-square relative overflow-hidden group cursor-pointer bg-surface-container-highest"
+       href="projets/graphisme/type-specimen.html"
+       aria-label="Voir le projet Type Specimen">
+      <img alt="Spécimen typographique Type Specimen" loading="lazy"
+           class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+           src="https://lh3.googleusercontent.com/aida-public/AB6AXuBT8K5qORgCkxv7WjKZ_-9pj5oyYrS7A4Dd4yhlvbVybiGeLmJSAonTqPSjMQ2YSybZPJkUoJBLfDXP8sKaQIja3htBoCzC4ZzJo50K9YBnVbLVhybhxiY-vrKy_VvjKq56mcuKWOLD_QaGPR1u2nR22sNS8roEcD2UwUzknfo0PbdoWKTPBCVLngIOu7-XD_G5rI-jSFTenwQ9lGlpJB0nd7fA9ebvGW_FAwLXTCLAXrHfZr1swe798uAZI-k-l_hbyKW8M8pThA7O"/>
+      <div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-8">
+        <span class="text-white text-sm tracking-widest uppercase font-bold">Type Specimen</span>
+      </div>
+    </a>
+
+    <!-- ══════════════════════════════════════════════════════════ -->
+    <!-- PROJET GRAPHISME 10 — Fluidity Series                     -->
+    <!-- ══════════════════════════════════════════════════════════ -->
+    <a class="aspect-square relative overflow-hidden group cursor-pointer bg-surface-container-highest"
+       href="projets/graphisme/fluidity-series.html"
+       aria-label="Voir le projet Fluidity Series">
+      <img alt="Série abstraite numérique Fluidity Series" loading="lazy"
+           class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+           src="https://lh3.googleusercontent.com/aida-public/AB6AXuC98fq2ycBE1uHlGr5j97deQRy30rIzc4cJqqG2tlIn3o4JKXz3PjTvwBX0LGU22EesosGybuTBJMb55BcnnHFxQy7Dpyqu-SEkFyBYvB2zyIWBACegjTG--5ogFiZ-OWFX4IFdvPwd9IOZtNSpsTt6N1hXMaxzvM8hOPckofYFIRL-hui4m1KhPfpU_bxCnROxBsaXzNSMfdB0UngnbXR8dVUj4XDfYSugBHuYWokX5zxc9Bij7giKq-oo95s2JOJrQp7Y_8WjNLNJ"/>
+      <div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-8">
+        <span class="text-white text-sm tracking-widest uppercase font-bold">Fluidity Series</span>
+      </div>
+    </a>
+
+    <!-- ══════════════════════════════════════════════════════════ -->
+    <!-- PROJET GRAPHISME 11 — Architecture du Vide                -->
+    <!-- ══════════════════════════════════════════════════════════ -->
+    <a class="aspect-square relative overflow-hidden group cursor-pointer bg-surface-container-highest"
+       href="projets/graphisme/architecture-du-vide.html"
+       aria-label="Voir le projet Architecture du Vide">
+      <img alt="Design livre Architecture du Vide" loading="lazy"
+           class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+           src="https://lh3.googleusercontent.com/aida-public/AB6AXuCdzr0hbdxZUE81vGjXTt3wx2VJ-qBHOWF-Y9JbCoWWmUkqf4wwMaYIfLN2jKLFPQnAmCapNlu-S0qv8s2AV-etQLXKDAatI4yTq8-jXySYvpfTkGzb8LFnrBlqF8t6r0vnhYDvgKkYcJjiBrGTxLcoNzzB9nRx4VS0TuUjKoD_D8qBDJH8L8HbpRjw0rEGdFk_RtbfkEnpo3dQHDfZoxcvfjGucA-nKBdIyde9GgJQYO__bHug8VpgcJTHvhkWF9w9bN8evWClhfAGOK"/>
+      <div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-8">
+        <span class="text-white text-sm tracking-widest uppercase font-bold">Architecture du Vide</span>
+      </div>
+    </a>
+
+    <!-- ══════════════════════════════════════════════════════════ -->
+    <!-- PROJET GRAPHISME 12 — Signage Project                     -->
+    <!-- ══════════════════════════════════════════════════════════ -->
+    <a class="aspect-square relative overflow-hidden group cursor-pointer bg-surface-container-highest"
+       href="projets/graphisme/signage-project.html"
+       aria-label="Voir le projet Signage Project">
+      <img alt="Typographie néon Signage Project" loading="lazy"
+           class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+           src="https://lh3.googleusercontent.com/aida-public/AB6AXuDlMxQjfRPd4bTIjnQr3DsEwcRKDdMdOI1hb0iiJk-eb-xE4carja47FBoOjKTovuuclh_twdHxHBhA3ZKW4njmFJU6gX_uz8X8x92ge7lDApQv4s4l-X6W3aGbSgADSghII9zUA6XWkP4-oCfgHXCCmyGPEU40TB2OrqvFPXW6AXtHnyfTzjLPTg6rbMjNXn1qmP90TOPaW_KPSacN9KUtCtrCIcaeOTpL66V5aMCwb9S20CRqFrGQhQecVzQv6Qp19cuwI9gaoFPn"/>
+      <div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-8">
+        <span class="text-white text-sm tracking-widest uppercase font-bold">Signage Project</span>
+      </div>
+    </a>
+
+  </section>
+
+  <!-- CTA -->
+  <section class="py-48 px-12 text-center">
+    <h2 class="text-4xl md:text-6xl font-bold tracking-tighter mb-12">Un nouveau projet ?</h2>
+    <a class="inline-block bg-primary text-on-primary px-12 py-6 rounded-sm text-sm tracking-widest uppercase font-bold hover:opacity-80 transition-opacity" href="index.html#contact-section">Parlons-en</a>
+  </section>
+</main>
+
+<footer class="w-full py-24 bg-stone-100 border-t border-stone-200">
+  <div class="flex flex-col md:flex-row justify-between items-center px-12 max-w-screen-2xl mx-auto">
+    <div class="font-sans text-sm tracking-widest uppercase text-zinc-400 mb-8 md:mb-0">© 2025 Studio Pécab. Fait avec soin.</div>
+    <div class="flex gap-12 font-sans text-sm tracking-widest uppercase">
+      <a class="text-zinc-400 hover:text-primary transition-all" href="#">Instagram</a>
+      <a class="text-zinc-400 hover:text-primary transition-all" href="#">LinkedIn</a>
+      <a class="text-zinc-400 hover:text-primary transition-all" href="mailto:pecabstudio@gmail.com">Email</a>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

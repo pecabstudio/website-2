@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Pages à ne pas indexer
+Disallow: /admin/
+Disallow: /merci
+
+Sitemap: https://pecab.netlify.app/sitemap.xml
